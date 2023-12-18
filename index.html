@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Chatbot</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(to bottom right, #4A00E0, #9B2EF1);
+            color: #fff;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden; /* Prevent scrolling */
+        }
+
+        #chatbot-container {
+            background-color: rgba(255, 255, 255, 0.8);
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+            max-width: 600px;
+            width: 100%;
+            position: absolute;
+            top: 20px; /* Adjust as needed */
+            transform: translateX(-50%);
+            left: 50%;
+            overflow: hidden;
+            font-size: 14px;
+        }
+
+        /* Add any additional styling for your chatbot here */
+
+        h1 {
+            color: #9B2EF1;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="chatbot-container">
+        <h1>Hello there it's Marc from Tech Haven to talk to me click the button on the bottom right</h1>
+        <!-- Your chatbot integration code goes here -->
+    </div>
+<script type="text/javascript">
+  (function(d, t) {
+      var v = d.createElement(t), s = d.getElementsByTagName(t)[0];
+      v.onload = function() {
+        window.voiceflow.chat.load({
+          verify: { projectID: '6564b1959599e20007a2e99d' },
+          url: 'https://general-runtime.voiceflow.com',
+          versionID: 'production'
+        });
+      }
+      v.src = "https://cdn.voiceflow.com/widget/bundle.mjs"; v.type = "text/javascript"; s.parentNode.insertBefore(v, s);
+  })(document, 'script');
+</script>
+</body>
+</html>
